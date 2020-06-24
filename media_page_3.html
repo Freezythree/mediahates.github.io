@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Media Hates </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<header>
+<h1>
+	
+	<ul class="nav">
+
+	<li> <a href="index1.html">Home</a></li>
+	<li> <a href="media_homepage.html">Media</a></li>
+	<li> <a href="twitter_homepage.html">Twitter</a></li>
+	<li> <a href="other_homepage.html">Other</a></li>
+
+	</ul>
+</h1>
+</header>
+<body class="index-info">
+
+<p align=center><strong> The media has become your enemy. These monsters will do anything to get viewership. They lie, cheat and bully the citizens of the United States simply for the almighty dollar. Media Hates You was created to document the medias hypocrisy. This includes social media.
+</strong><p/>
+<br><br><br><br>
+<p align=center><strong>Use the buttons on the side of the images to scroll through.</strong></p>
+<br><br><br>
+<p align=center><a href="media_homepage.html">1</a>
+		<a href="media_page_2.html">2</a>
+		<a href="media_page_3.html">3</a>
+		<a href="media_page_4.html">4</a>
+		<a href="media_page_5.html">5</a>
+</p>
+<br><br>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 10</div>
+    <img src="Media/media_lies_21.png" style="width:100%">
+   
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 10</div>
+    <img src="Media/media_lies_22.png" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 10</div>
+    <img src="Media/media_lies_23.png" style="width:100%">
+</div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 10</div>
+    <img src="Media/media_lies_24.png" style="width:100%">
+</div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 10</div>
+    <img src="Media/media_lies_25.png" style="width:100%">
+</div>
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 10</div>
+    <img src="Media/media_lies_26.png" style="width:100%">
+</div>
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 10</div>
+    <img src="Media/media_lies_27.png" style="width:100%">
+</div>
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 10</div>
+    <img src="Media/media_lies_28.png" style="width:100%">
+</div>
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 10</div>
+    <img src="Media/media_lies_29.png" style="width:100%">
+  </div>
+<div class="mySlides fade">
+    <div class="numbertext">10 / 10</div>
+    <img src="Media/media_lies_30.png" style="width:100%">
+</div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
